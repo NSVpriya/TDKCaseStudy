@@ -33,4 +33,4 @@ update_summary_tables_task = BashOperator(
 
 
 
-process_log_task >> update_summary_tables_task
+pipeline_started >> process_log_task >> update_summary_tables_task
